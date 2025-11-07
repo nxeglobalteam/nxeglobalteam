@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>No Xcuse (NXE) — Official</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">NXE</div>
+      <div class="title">No Xcuse</div>
+    </div>
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#roster">Roster</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <h1>No Xcuse — NXE</h1>
+      <p class="slogan">No Excuses. No Fear. No Limits.</p>
+      <p class="lead">Official website of NXE esports team — roster, achievements, and contact.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About NXE</h2>
+      <p>NXE (No Xcuse) is a competitive esports team focused on disciplined training, teamwork, and excellence. We compete in local and international tournaments.</p>
+    </section>
+
+    <section id="roster" class="card">
+      <h2>Team Roster</h2>
+      <div class="roster-grid">
+        <article class="player">
+          <div class="avatar">JZ</div>
+          <h3>NXE-JYNZOR</h3>
+          <p>Role: Captain / IGL</p>
+        </article>
+        <article class="player">
+          <div class="avatar">RB</div>
+          <h3>NXE-RABBI</h3>
+          <p>Role: Support / Fragger</p>
+        </article>
+        <article class="player">
+          <div class="avatar">AA</div>
+          <h3>NXE-AL-AMIN</h3>
+          <p>Role: Sniper / Scout</p>
+        </article>
+        <article class="player">
+          <div class="avatar">SV</div>
+          <h3>NXE-SHUVO</h3>
+          <p>Role: Entry / Assaulter</p>
+        </article>
+      </div>
+      <p class="muted">Tip: খেলোয়াড়দের ছবি পরে যোগ করতে পারো — এখন placeholder ব্যবহার হয়েছে।</p>
+    </section>
+
+    <section id="achievements" class="card">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Top 4 — Local LAN Cup 2024</li>
+        <li>Champions — Inter-College Invitational 2023</li>
+        <li>Runner-up — City Esports League 2022</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact / Join Us</h2>
+      <p>Interested to join NXE or arrange scrims? Email: <a href="mailto:nxe.official@gmail.com">nxe.official@gmail.com</a></p>
+      <p>Follow us on social: (add links)</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> NXE — No Xcuse. No Fear. No Limits.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Smooth scroll for internal links
+    document.querySelectorAll('.main-nav a').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+      });
+    });
+  </script>
+</body>
+</html>
